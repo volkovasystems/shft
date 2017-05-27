@@ -29,14 +29,14 @@
 
 	@module-configuration:
 		{
-			"package": "silph",
-			"path": "silph/silph.js",
-			"file": "silph.js",
-			"module": "silph",
+			"package": "shft",
+			"path": "shft/shft.js",
+			"file": "shft.js",
+			"module": "shft",
 			"author": "Richeve S. Bebedor",
 			"eMail": "richeve.bebedor@gmail.com",
-			"repository": "https://github.com/volkovasystems/silph.git",``
-			"test": "silph-test.js",
+			"repository": "https://github.com/volkovasystems/shft.git",``
+			"test": "shft-test.js",
 			"global": true
 		}
 	@end-module-configuration
