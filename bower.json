@@ -1,0 +1,32 @@
+{
+  "name": "shft",
+  "version": "0.0.0",
+  "description": "Get remaining elements starting from the given index.",
+  "main": "shft.deploy.js",
+  "support": "shft.support.js",
+  "authors": [
+    "Richeve S. Bebedor <richeve.bebedor@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "get",
+    "element",
+    "start",
+    "index",
+    "shft"
+  ],
+  "homepage": "https://github.com/volkovasystems/shft",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "arid": "^0.25.0",
+    "doubt": "^0.26.0",
+    "protype": "^0.21.0",
+    "raze": "^0.29.0"
+  }
+}
