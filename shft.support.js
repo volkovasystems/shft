@@ -36,7 +36,8 @@
               			"author": "Richeve S. Bebedor",
               			"eMail": "richeve.bebedor@gmail.com",
               			"contributors": [
-              				"John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>"
+              				"John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
+              				"Vinse Vinalon <vinsevinalon@gmail.com>"
               			],
               			"repository": "https://github.com/volkovasystems/shft.git",``
               			"test": "shft-test.js",
@@ -56,7 +57,6 @@
               		{
               			"arid": "arid",
               			"doubt": "doubt",
-              			"protype": "protype"
               			"raze": "raze"
               		}
               	@end-include
@@ -64,7 +64,6 @@
 
 var arid = require("arid");
 var doubt = require("doubt");
-var protype = require("protype");
 var raze = require("raze");
 
 var shft = function shft(array, index) {
@@ -81,7 +80,7 @@ var shft = function shft(array, index) {
 		return [];
 	}
 
-	if (!protype(index, NUMBER) || index === 0) {
+	if (typeof index != "number" || index === 0) {
 		index = 1;
 	}
 

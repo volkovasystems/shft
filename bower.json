@@ -1,12 +1,13 @@
 {
   "name": "shft",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Get remaining elements starting from the given index.",
   "main": "shft.deploy.js",
   "support": "shft.support.js",
   "authors": [
     "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
-    "John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>"
+    "John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
+    "Vinse Vinalon <vinsevinalon@gmail.com>"
   ],
   "license": "MIT",
   "keywords": [
@@ -25,9 +26,8 @@
     "tests"
   ],
   "dependencies": {
-    "arid": "^0.26.0",
-    "doubt": "^0.27.0",
-    "protype": "^0.22.0",
-    "raze": "^0.30.0"
+    "arid": "^0.28.0",
+    "doubt": "^0.29.0",
+    "raze": "^0.32.0"
   }
 }
