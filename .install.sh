@@ -1,7 +1,6 @@
 yarn add \
 babel-runtime \
 arid \
-doubt \
 raze \
 --save && \
 yarn add \
@@ -14,7 +13,6 @@ webpack \
 --dev && \
 bower install \
 arid \
-doubt \
 raze \
 --save \
 --force-latest
