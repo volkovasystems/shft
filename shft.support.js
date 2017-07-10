@@ -56,14 +56,12 @@
               	@include:
               		{
               			"arid": "arid",
-              			"doubt": "doubt",
               			"raze": "raze"
               		}
               	@end-include
               */
 
 var arid = require("arid");
-var doubt = require("doubt");
 var raze = require("raze");
 
 var shft = function shft(array, index) {
@@ -76,7 +74,7 @@ var shft = function shft(array, index) {
                                         	@end-meta-configuration
                                         */
 
-	if (!doubt(array, AS_ARRAY) || arid(array)) {
+	if (arid(array)) {
 		return [];
 	}
 
