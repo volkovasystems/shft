@@ -1,17 +1,60 @@
-ok
 {
   "stats": {
-    "suites": 0,
-    "tests": 0,
-    "passes": 0,
+    "suites": 4,
+    "tests": 3,
+    "passes": 3,
     "pending": 0,
     "failures": 0,
-    "start": "2017-07-29T21:36:46.378Z",
-    "end": "2017-07-29T21:36:46.379Z",
-    "duration": 1
+    "start": "2017-07-30T16:08:02.064Z",
+    "end": "2017-07-30T16:08:02.070Z",
+    "duration": 6
   },
-  "tests": [],
+  "tests": [
+    {
+      "title": "should return [ 2, 3 ]",
+      "fullTitle": "shft `shft( [ 1, 2, 3 ] )` should return [ 2, 3 ]",
+      "duration": 2,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should return [ 3, 4, 5 ]",
+      "fullTitle": "shft `shft( [ 1, 2, 3, 4, 5 ], 2 )` should return [ 3, 4, 5 ]",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should return [ 4, 5 ]",
+      "fullTitle": "shft shft( [ 1, 2, 3, 4, 5 ], -2 ) should return [ 4, 5 ]",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    }
+  ],
   "pending": [],
   "failures": [],
-  "passes": []
+  "passes": [
+    {
+      "title": "should return [ 2, 3 ]",
+      "fullTitle": "shft `shft( [ 1, 2, 3 ] )` should return [ 2, 3 ]",
+      "duration": 2,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should return [ 3, 4, 5 ]",
+      "fullTitle": "shft `shft( [ 1, 2, 3, 4, 5 ], 2 )` should return [ 3, 4, 5 ]",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should return [ 4, 5 ]",
+      "fullTitle": "shft shft( [ 1, 2, 3, 4, 5 ], -2 ) should return [ 4, 5 ]",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    }
+  ]
 }
