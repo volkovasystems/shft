@@ -194,7 +194,7 @@ describe( "shft", ( ) => {
 
 	describe( "`shft( { '0': Symbol.for( 'hello' ), '1': 2, '2': 'hello', '3': Symbol.for( 'hi' ) } )`", ( ) => {
 		it( "should be equal to [ 'hello', Symbol.for( 'hi' ) ]", ( ) => {
-
+			//: @ignore:
 			let result = browser.url( bridgeURL ).execute(
 
 				function( ){
@@ -203,7 +203,7 @@ describe( "shft", ( ) => {
 				}
 
 			).value;
-
+			//: @end-ignore
 			assert.deepEqual( result, [ "hello", Symbol.for( "hi" ) ] );
 
 		} );
