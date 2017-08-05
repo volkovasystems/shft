@@ -191,6 +191,24 @@ describe( "shft", ( ) => {
 		} );
 	} );
 
+
+	describe( "`shft( { '0': Symbol.for( 'hello' ), '1': 2, '2': 'hello', '3': Symbol.for( 'hi' ) } )`", ( ) => {
+		it( "should be equal to [ 'hello', Symbol.for( 'hi' ) ]", ( ) => {
+
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					return shft( { "0": Symbol.for( "hello" ),
+						"1": 2, "2": "hello", "3": Symbol.for( "hi" ) } );
+				}
+
+			).value;
+
+			assert.deepEqual( result, [ "hello", Symbol.for( "hi" ) ] );
+
+		} );
+	} );
+
 } );
 
 //: @end-bridge
