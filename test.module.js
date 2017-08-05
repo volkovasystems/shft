@@ -73,30 +73,30 @@ const path = require( "path" );
 describe( "shft", ( ) => {
 
 	describe( "`shft( [ 1, 2, 3 ] )`", ( ) => {
-		it( "should return [ 2, 3 ]", ( ) => {
+		it( "should be equal to [ 2, 3 ]", ( ) => {
 
 			assert.deepEqual( shft( [ 1, 2, 3 ] ), [ 2, 3 ] );
 
 		} );
 	} );
 
-	describe( "`shft( [ 1, 2, 3, 4, 5 ], 2 )`", ( ) => {
-	it( "should return [ 3, 4, 5 ]", ( ) => {
 
-		assert.deepEqual( shft( [ 1, 2, 3, 4, 5 ], 2 ), [ 3, 4, 5 ] );
+	describe( "`shft( [ 1, 2, 3, 4, 5 ], 2 )`", ( ) => {
+		it( "should be equal to [ 3, 4, 5 ]", ( ) => {
+
+			assert.deepEqual( shft( [ 1, 2, 3, 4, 5 ], 2 ), [ 3, 4, 5 ] );
 
 		} );
 	} );
 
-	describe( "shft( [ 1, 2, 3, 4, 5 ], -2 )", ( ) => {
-	it( "should return [ 4, 5 ]", ( ) => {
+
+	describe( "`shft( [ 1, 2, 3, 4, 5 ], -2 )`", ( ) => {
+		it( "should be equal to [ 4, 5 ]", ( ) => {
 
 			assert.deepEqual( shft( [ 1, 2, 3, 4, 5 ], -2 ), [ 4, 5 ] );
 
 		} );
 	} );
-
-
 } );
 
 
@@ -108,29 +108,30 @@ describe( "shft", ( ) => {
 describe( "shft", ( ) => {
 
 	describe( "`shft( [ 1, 2, 3 ] )`", ( ) => {
-		it( "should return [ 2, 3 ]", ( ) => {
+		it( "should be equal to [ 2, 3 ]", ( ) => {
 
 			assert.deepEqual( shft( [ 1, 2, 3 ] ), [ 2, 3 ] );
 
 		} );
 	} );
+	
 
 	describe( "`shft( [ 1, 2, 3, 4, 5 ], 2 )`", ( ) => {
-	it( "should return [ 3, 4, 5 ]", ( ) => {
+		it( "should be equal to [ 3, 4, 5 ]", ( ) => {
 
-		assert.deepEqual( shft( [ 1, 2, 3, 4, 5 ], 2 ), [ 3, 4, 5 ] );
+			assert.deepEqual( shft( [ 1, 2, 3, 4, 5 ], 2 ), [ 3, 4, 5 ] );
 
 		} );
 	} );
 
-	describe( "shft( [ 1, 2, 3, 4, 5 ], -2 )", ( ) => {
-	it( "should return [ 4, 5 ]", ( ) => {
+
+	describe( "`shft( [ 1, 2, 3, 4, 5 ], -2 )`", ( ) => {
+		it( "should be equal to [ 4, 5 ]", ( ) => {
 
 			assert.deepEqual( shft( [ 1, 2, 3, 4, 5 ], -2 ), [ 4, 5 ] );
 
 		} );
 	} );
-
 } );
 
 //: @end-client

@@ -55,7 +55,7 @@
 	@end-include
 */
 
-const assert = require( "assert" );
+const assert = require( "should" );
 
 //: @server:
 const shft = require( "./shft.js" );
@@ -67,32 +67,32 @@ const shft = require( "./shft.js" );
 
 //: @server:
 describe( "shft", ( ) => {
-	
+
 	describe( "`shft( [ 1, 2, 3 ] )`", ( ) => {
-		it( "should return [ 2, 3 ]", ( ) => {
+		it( "should be equal to [ 2, 3 ]", ( ) => {
 
 			assert.deepEqual( shft( [ 1, 2, 3 ] ), [ 2, 3 ] );
 
 		} );
 	} );
 
-	describe( "`shft( [ 1, 2, 3, 4, 5 ], 2 )`", ( ) => {
-	it( "should return [ 3, 4, 5 ]", ( ) => {
 
-		assert.deepEqual( shft( [ 1, 2, 3, 4, 5 ], 2 ), [ 3, 4, 5 ] );
+	describe( "`shft( [ 1, 2, 3, 4, 5 ], 2 )`", ( ) => {
+		it( "should be equal to [ 3, 4, 5 ]", ( ) => {
+
+			assert.deepEqual( shft( [ 1, 2, 3, 4, 5 ], 2 ), [ 3, 4, 5 ] );
 
 		} );
 	} );
 
-	describe( "shft( [ 1, 2, 3, 4, 5 ], -2 )", ( ) => {
-	it( "should return [ 4, 5 ]", ( ) => {
+
+	describe( "`shft( [ 1, 2, 3, 4, 5 ], -2 )`", ( ) => {
+		it( "should be equal to [ 4, 5 ]", ( ) => {
 
 			assert.deepEqual( shft( [ 1, 2, 3, 4, 5 ], -2 ), [ 4, 5 ] );
 
 		} );
 	} );
-
-
 } );
 
 
@@ -102,17 +102,3 @@ describe( "shft", ( ) => {
 
 
 
-
-
-
-
-
-
-
-// ( function( ){
-
-// 	assert.deepEqual( shft( arguments, 2 ), [ "hello", Symbol.for( "hi" ) ], "should return [ 'hello', Symbol.for( 'hi' ) ]" );
-
-// } )( Symbol.for( "hello" ), 2, "hello", Symbol.for( "hi" ) );
-
-// console.log( "ok" )
