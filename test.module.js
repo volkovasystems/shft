@@ -55,7 +55,7 @@
 	@end-include
 */
 
-const assert = require( "assert" );
+const assert = require( "should" );
 
 //: @server:
 const shft = require( "./shft.js" );
@@ -71,7 +71,7 @@ const path = require( "path" );
 
 //: @server:
 describe( "shft", ( ) => {
-	
+
 	describe( "`shft( [ 1, 2, 3 ] )`", ( ) => {
 		it( "should return [ 2, 3 ]", ( ) => {
 
@@ -103,10 +103,10 @@ describe( "shft", ( ) => {
 //: @end-server
 
 
-//: @client: 
+//: @client:
 
 describe( "shft", ( ) => {
-	
+
 	describe( "`shft( [ 1, 2, 3 ] )`", ( ) => {
 		it( "should return [ 2, 3 ]", ( ) => {
 
@@ -135,18 +135,46 @@ describe( "shft", ( ) => {
 
 //: @end-client
 
-
 //: @bridge:
 
+describe( "shft", ( ) => {
 
+	let bridgeURL = `file://${ path.resolve( __dirname, "bridge.html" ) }`;
+
+	describe( "`shft( [ 1, 2, 3 ] )`", ( ) => {
+		it( "should be equal to [ 2, 3 ]", ( ) => {
+
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					return shft( [ 1, 2, 3 ] );
+				}
+
+			).value;
+
+			assert.deepEqual( result, [ 2, 3 ] );
+
+		} );
+	} );
+
+	/*
+	describe( "`<test>`", ( ) => {
+		it( <message>, ( ) => {
+
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+
+				}
+
+			).value;
+
+			assert.equal( result, <expected> );
+
+		} );
+	} );
+	*/
+
+} );
 
 //: @end-bridge
-
-
-// ( function( ){
-
-// 	assert.deepEqual( shft( arguments, 2 ), [ "hello", Symbol.for( "hi" ) ], "should return [ 'hello', Symbol.for( 'hi' ) ]" );
-
-// } )( Symbol.for( "hello" ), 2, "hello", Symbol.for( "hi" ) );
-
-// console.log( "ok" )
