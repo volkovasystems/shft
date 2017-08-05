@@ -174,6 +174,23 @@ describe( "shft", ( ) => {
 		} );
 	} );
 
+
+	describe( "`shft( [ 1, 2, 3, 4, 5 ], -2 )`", ( ) => {
+		it( "should be equal to [ 4, 5 ]", ( ) => {
+
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					return shft( [ 1, 2, 3, 4, 5 ], -2 );
+				}
+
+			).value;
+
+			assert.deepEqual( result, [ 4, 5 ] );
+
+		} );
+	} );
+
 } );
 
 //: @end-bridge
