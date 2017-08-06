@@ -97,6 +97,7 @@ describe( "shft", ( ) => {
 
 		} );
 	} );
+
 } );
 
 
@@ -114,7 +115,7 @@ describe( "shft", ( ) => {
 
 		} );
 	} );
-	
+
 
 	describe( "`shft( [ 1, 2, 3, 4, 5 ], 2 )`", ( ) => {
 		it( "should be equal to [ 3, 4, 5 ]", ( ) => {
@@ -132,6 +133,7 @@ describe( "shft", ( ) => {
 
 		} );
 	} );
+	
 } );
 
 //: @end-client
