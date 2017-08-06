@@ -1,6 +1,6 @@
 {
 	"name": "shft",
-	"version": "0.5.0",
+	"version": "0.6.0",
 	"description": "Get remaining elements starting from the given index.",
 	"main": "shft.deploy.js",
 	"support": "shft.support.js",

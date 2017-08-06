@@ -5,15 +5,15 @@
 		"passes": 3,
 		"pending": 0,
 		"failures": 0,
-		"start": "2017-08-06T03:42:09.518Z",
-		"end": "2017-08-06T03:42:09.525Z",
-		"duration": 7
+		"start": "2017-08-06T07:00:16.052Z",
+		"end": "2017-08-06T07:00:16.064Z",
+		"duration": 12
 	},
 	"tests": [
 		{
 			"title": "should be equal to [ 2, 3 ]",
 			"fullTitle": "shft `shft( [ 1, 2, 3 ] )` should be equal to [ 2, 3 ]",
-			"duration": 3,
+			"duration": 4,
 			"currentRetry": 0,
 			"err": {}
 		},
@@ -38,7 +38,7 @@
 		{
 			"title": "should be equal to [ 2, 3 ]",
 			"fullTitle": "shft `shft( [ 1, 2, 3 ] )` should be equal to [ 2, 3 ]",
-			"duration": 3,
+			"duration": 4,
 			"currentRetry": 0,
 			"err": {}
 		},
