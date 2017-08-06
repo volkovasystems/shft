@@ -1,60 +1,60 @@
 {
-  "stats": {
-    "suites": 4,
-    "tests": 3,
-    "passes": 3,
-    "pending": 0,
-    "failures": 0,
-    "start": "2017-08-05T11:43:48.361Z",
-    "end": "2017-08-05T11:43:48.368Z",
-    "duration": 7
-  },
-  "tests": [
-    {
-      "title": "should be equal to [ 2, 3 ]",
-      "fullTitle": "shft `shft( [ 1, 2, 3 ] )` should be equal to [ 2, 3 ]",
-      "duration": 2,
-      "currentRetry": 0,
-      "err": {}
-    },
-    {
-      "title": "should be equal to [ 3, 4, 5 ]",
-      "fullTitle": "shft `shft( [ 1, 2, 3, 4, 5 ], 2 )` should be equal to [ 3, 4, 5 ]",
-      "duration": 1,
-      "currentRetry": 0,
-      "err": {}
-    },
-    {
-      "title": "should be equal to [ 4, 5 ]",
-      "fullTitle": "shft `shft( [ 1, 2, 3, 4, 5 ], -2 )` should be equal to [ 4, 5 ]",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {}
-    }
-  ],
-  "pending": [],
-  "failures": [],
-  "passes": [
-    {
-      "title": "should be equal to [ 2, 3 ]",
-      "fullTitle": "shft `shft( [ 1, 2, 3 ] )` should be equal to [ 2, 3 ]",
-      "duration": 2,
-      "currentRetry": 0,
-      "err": {}
-    },
-    {
-      "title": "should be equal to [ 3, 4, 5 ]",
-      "fullTitle": "shft `shft( [ 1, 2, 3, 4, 5 ], 2 )` should be equal to [ 3, 4, 5 ]",
-      "duration": 1,
-      "currentRetry": 0,
-      "err": {}
-    },
-    {
-      "title": "should be equal to [ 4, 5 ]",
-      "fullTitle": "shft `shft( [ 1, 2, 3, 4, 5 ], -2 )` should be equal to [ 4, 5 ]",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {}
-    }
-  ]
+	"stats": {
+		"suites": 4,
+		"tests": 3,
+		"passes": 3,
+		"pending": 0,
+		"failures": 0,
+		"start": "2017-08-06T03:42:09.518Z",
+		"end": "2017-08-06T03:42:09.525Z",
+		"duration": 7
+	},
+	"tests": [
+		{
+			"title": "should be equal to [ 2, 3 ]",
+			"fullTitle": "shft `shft( [ 1, 2, 3 ] )` should be equal to [ 2, 3 ]",
+			"duration": 3,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should be equal to [ 3, 4, 5 ]",
+			"fullTitle": "shft `shft( [ 1, 2, 3, 4, 5 ], 2 )` should be equal to [ 3, 4, 5 ]",
+			"duration": 1,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should be equal to [ 4, 5 ]",
+			"fullTitle": "shft `shft( [ 1, 2, 3, 4, 5 ], -2 )` should be equal to [ 4, 5 ]",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		}
+	],
+	"pending": [],
+	"failures": [],
+	"passes": [
+		{
+			"title": "should be equal to [ 2, 3 ]",
+			"fullTitle": "shft `shft( [ 1, 2, 3 ] )` should be equal to [ 2, 3 ]",
+			"duration": 3,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should be equal to [ 3, 4, 5 ]",
+			"fullTitle": "shft `shft( [ 1, 2, 3, 4, 5 ], 2 )` should be equal to [ 3, 4, 5 ]",
+			"duration": 1,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should be equal to [ 4, 5 ]",
+			"fullTitle": "shft `shft( [ 1, 2, 3, 4, 5 ], -2 )` should be equal to [ 4, 5 ]",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		}
+	]
 }

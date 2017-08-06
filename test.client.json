@@ -1,0 +1,148 @@
+{
+	"state": {
+		"passed": 3,
+		"failed": 0,
+		"skipped": 0
+	},
+	"start": "2017-08-06T03:42:10.638Z",
+	"end": "2017-08-06T03:42:45.253Z",
+	"capabilities": {
+		"browserName": "chrome",
+		"chromeOptions": {
+			"args": [
+				"disable-gpu",
+				"headless"
+			]
+		},
+		"proxy": null
+	},
+	"host": "127.0.0.1",
+	"port": 4444,
+	"baseUrl": "http://localhost",
+	"framework": "mocha",
+	"mochaOpts": {
+		"timeout": 10000,
+		"ui": "bdd"
+	},
+	"suites": [
+		{
+			"name": "shft",
+			"duration": 0,
+			"start": "2017-08-06T03:42:44.880Z",
+			"tests": [],
+			"hooks": []
+		},
+		{
+			"name": "shft",
+			"duration": 196,
+			"start": "2017-08-06T03:42:44.881Z",
+			"end": "2017-08-06T03:42:45.077Z",
+			"tests": [],
+			"hooks": [
+				{
+					"start": "2017-08-06T03:42:44.882Z",
+					"end": "2017-08-06T03:42:44.882Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "shft",
+					"associatedTest": "should be equal to [ 2, 3 ]"
+				},
+				{
+					"start": "2017-08-06T03:42:44.995Z",
+					"end": "2017-08-06T03:42:44.995Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "shft",
+					"associatedTest": "should be equal to [ 2, 3 ]"
+				},
+				{
+					"start": "2017-08-06T03:42:44.996Z",
+					"end": "2017-08-06T03:42:44.996Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "shft",
+					"associatedTest": "should be equal to [ 3, 4, 5 ]"
+				},
+				{
+					"start": "2017-08-06T03:42:45.039Z",
+					"end": "2017-08-06T03:42:45.040Z",
+					"duration": 1,
+					"title": "\"after each\" hook",
+					"associatedSuite": "shft",
+					"associatedTest": "should be equal to [ 3, 4, 5 ]"
+				},
+				{
+					"start": "2017-08-06T03:42:45.040Z",
+					"end": "2017-08-06T03:42:45.040Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "shft",
+					"associatedTest": "should be equal to [ 4, 5 ]"
+				},
+				{
+					"start": "2017-08-06T03:42:45.077Z",
+					"end": "2017-08-06T03:42:45.077Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "shft",
+					"associatedTest": "should be equal to [ 4, 5 ]"
+				},
+				{
+					"start": "2017-08-06T03:42:45.077Z",
+					"end": "2017-08-06T03:42:45.077Z",
+					"duration": 0,
+					"title": "\"after all\" hook",
+					"associatedSuite": "shft"
+				}
+			]
+		},
+		{
+			"name": "`shft( [ 1, 2, 3 ] )`",
+			"duration": 115,
+			"start": "2017-08-06T03:42:44.881Z",
+			"end": "2017-08-06T03:42:44.996Z",
+			"tests": [
+				{
+					"name": "should be equal to [ 2, 3 ]",
+					"start": "2017-08-06T03:42:44.882Z",
+					"end": "2017-08-06T03:42:44.995Z",
+					"duration": 113,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		},
+		{
+			"name": "`shft( [ 1, 2, 3, 4, 5 ], 2 )`",
+			"duration": 44,
+			"start": "2017-08-06T03:42:44.996Z",
+			"end": "2017-08-06T03:42:45.040Z",
+			"tests": [
+				{
+					"name": "should be equal to [ 3, 4, 5 ]",
+					"start": "2017-08-06T03:42:44.996Z",
+					"end": "2017-08-06T03:42:45.039Z",
+					"duration": 43,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		},
+		{
+			"name": "`shft( [ 1, 2, 3, 4, 5 ], -2 )`",
+			"duration": 37,
+			"start": "2017-08-06T03:42:45.040Z",
+			"end": "2017-08-06T03:42:45.077Z",
+			"tests": [
+				{
+					"name": "should be equal to [ 4, 5 ]",
+					"start": "2017-08-06T03:42:45.040Z",
+					"end": "2017-08-06T03:42:45.077Z",
+					"duration": 37,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		}
+	]
+}
